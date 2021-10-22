@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> flex grow</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+
+<style>
+.flex-container{
+display: flex;
+border: 2px solid black;
+max-width: 300px;
+margin-bottom: 20px;
+justify-content: center;
+}
+
+.item{
+background-color: orangered;
+margin: 5px;
+padding: 10px;
+text-align: center;
+color:white;
+}
+
+.fg-0{
+flex-grow: 0;
+}
+.fg-1{
+flex-grow: 1;
+}
+.fg-2{
+flex-grow: 2;
+}
+.fg-3{
+flex-grow: 3;
+}
+        </style>
+    </head>
+    <body>
+        <p>flex-grow:0</p>
+        <div class="flex-container">
+            <div class="item fg-0">a</div>
+            <div class="item fg-0">b</div>
+            <div class="item fg-0">c</div>
+            <div class="item fg-0">d</div>
+           </div>
+
+           <p>flex-grow:1</p>
+           <div class="flex-container">
+            <div class="item fg-1">a</div>
+            <div class="item fg-1">b</div>
+            <div class="item fg-1">c</div>
+            <div class="item fg-1">d</div>
+       
+           </div>
+
+           <p>flex-grow:2</p>
+           <div class="flex-container">
+            <div class="item fg-1">a</div>
+            <div class="item fg-2">b</div>
+            <div class="item fg-2">c</div>
+            <div class="item fg-1">d</div>
+       
+           </div>
+           <p>flex-grow:2</p>
+           <div class="flex-container">
+            <div class="item fg-2">AAAAAAA</div>
+            <div class="item fg-2">BBBB</div>
+            <div class="item fg-2">c</div>
+            <div class="item fg-2">d</div>
+       
+           </div>
+    </body>
+</html>

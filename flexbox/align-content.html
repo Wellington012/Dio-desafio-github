@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>align content </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+
+<style>
+.container{
+
+height:400px;
+max-width: 300px;
+display: flex;
+flex-wrap: wrap;
+border: 1px solid black;
+}
+.item{
+
+background-color: orangered;
+padding: 0 5px;
+flex: 1;
+text-align: center;
+color: white;
+margin: 5px;
+border: 2px solid black;
+}
+.stretch{
+    align-content: stretch;
+}
+
+.center{
+    align-content: center;
+}
+.flex-start{
+    align-content: flex-start;
+}
+.flex-end{
+
+align-content: flex-end;
+}
+.space-around{
+
+align-content: space-around;
+}
+
+.space-between{
+
+    align-content: space-between;
+}
+</style>
+
+
+    </head>
+    <body>
+        <p>stretch</p>
+    <div class="container stretch">
+        <div class="item">sssffsssssddffedfdd</div>   
+        <div class="item">ssdsssdsdsdsssssssss</div> 
+        <div class="item">ssadasdsdassdsdasass</div> 
+        <div class="item">asdasdasdasdasdasasa</div> 
+        <div class="item">sdasdasdasdasdsadassa</div> 
+        <div class="item">aasaasdasdasdasdasdsad</div> 
+    </div>
+
+    <p>center</p>
+    <div class="container center">
+        <div class="item">sssffsssssddffedfdd</div>   
+        <div class="item">ssdsssdsdsdsssssssss</div> 
+        <div class="item">ssadasdsdassdsdasass</div> 
+        <div class="item">asdasdasdasdasdasasa</div> 
+        <div class="item">sdasdasdasdasdsadassa</div> 
+        <div class="item">aasaasdasdasdasdasdsad</div> 
+    </div>
+
+    <p>flex-start</p>
+    <div class="container flex-start">
+        <div class="item">sssffsssssddffedfdd</div>   
+        <div class="item">ssdsssdsdsdsssssssss</div> 
+        <div class="item">ssadasdsdassdsdasass</div> 
+        <div class="item">asdasdasdasdasdasasa</div> 
+        <div class="item">sdasdasdasdasdsadassa</div> 
+        <div class="item">aasaasdasdasdasdasdsad</div> 
+    </div>
+    <p>flex-end</p>
+    <div class="container flex-end">
+        <div class="item">sssffsssssddffedfdd</div>   
+        <div class="item">ssdsssdsdsdsssssssss</div> 
+        <div class="item">ssadasdsdassdsdasass</div> 
+        <div class="item">asdasdasdasdasdasasa</div> 
+        <div class="item">sdasdasdasdasdsadassa</div> 
+        <div class="item">aasaasdasdasdasdasdsad</div> 
+    </div>
+    <p>space-around</p>
+    <div class="container space-around">
+        <div class="item">sssffsssssddffedfdd</div>   
+        <div class="item">ssdsssdsdsdsssssssss</div> 
+        <div class="item">ssadasdsdassdsdasass</div> 
+        <div class="item">asdasdasdasdasdasasa</div> 
+        <div class="item">sdasdasdasdasdsadassa</div> 
+        <div class="item">aasaasdasdasdasdasdsad</div> 
+    </div>
+    <p>space-between</p>
+    <div class="container space-between">
+        <div class="item">sssffsssssddffedfdd</div>   
+        <div class="item">ssdsssdsdsdsssssssss</div> 
+        <div class="item">ssadasdsdassdsdasass</div> 
+        <div class="item">asdasdasdasdasdasasa</div> 
+        <div class="item">sdasdasdasdasdsadassa</div> 
+        <div class="item">aasaasdasdasdasdasdsad</div> 
+    </div>
+    </body>
+</html>
