@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>align self</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+
+        <style>
+        .flex-container{
+max-width: 350px;
+border: 1px solid;
+margin-bottom: 10px;
+display: flex;
+/*align-items: center; */        
+}
+.aline-container{
+    align-items: center; 
+
+}
+
+        .item{
+            
+            background: brown;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            margin:5px;
+        }
+
+.center{
+align-self: center;
+}
+
+.start{
+    align-self: flex-start;
+}
+.end{
+    align-self: flex-end;
+}
+.baseline{
+
+    align-self: baseline;
+}
+.stretch{
+    align-self: stretch;
+}
+.auto{
+    align-self: auto;
+}
+        </style>
+    </head>
+    <body>
+        <section class="flex-container aline-container">     
+        <div class="item auto">AAA</div>
+        <div class="item auto">1234</div>
+        <div class="item auto">3sdsdftftftfwsd</div>
+        <div class="item auto">item 4</div>
+        </section>
+
+        <section class="flex-container">     
+            <div class="item stretch">AAA</div>
+            <div class="item start">1234</div>
+            <div class="item auto">3sdsdftftftfwsd</div>
+            <div class="item end">item 4</div>
+            </section>
+    </body>
+</html>
